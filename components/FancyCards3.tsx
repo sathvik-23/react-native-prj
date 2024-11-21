@@ -1,25 +1,26 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-export default function FancyCards2() {
+export default function FancyCardsMysorePalace() {
   return (
     <View>
       <View style={[styles.card, styles.cardElevated]}>
         <Image
           source={{
-            uri: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg',
+            uri: 'https://upload.wikimedia.org/wikipedia/commons/4/4f/Mysore_Palace_Night.jpg',
           }}
           style={styles.cardImage}
         />
         <View style={styles.cardBody}>
-          <Text style={styles.cardTitle}>Taj Mahal</Text>
-          <Text style={styles.cardLabel}>Agra, Uttar Pradesh</Text>
+          <Text style={styles.cardTitle}>Mysore Palace</Text>
+          <Text style={styles.cardLabel}>Mysuru, Karnataka</Text>
           <Text style={styles.cardDescription}>
-            The Taj Mahal, an ivory-white marble mausoleum on the southern bank
-            of the river Yamuna in Agra, was commissioned in 1632 by Mughal
-            Emperor Shah Jahan in memory of his wife Mumtaz Mahal.
+            The Mysore Palace is a historical palace and the royal residence of
+            the Wadiyar dynasty. It is one of the most visited monuments in
+            India, famous for its Indo-Saracenic architecture and vibrant
+            lighting displays.
           </Text>
-          <Text style={styles.cardFooter}>2 hours away</Text>
+          <Text style={styles.cardFooter}>4 hours away</Text>
         </View>
       </View>
     </View>

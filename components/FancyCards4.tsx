@@ -1,25 +1,25 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-export default function FancyCards2() {
+export default function FancyCards4() {
   return (
     <View>
       <View style={[styles.card, styles.cardElevated]}>
         <Image
           source={{
-            uri: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg',
+            uri: 'https://upload.wikimedia.org/wikipedia/commons/a/a6/India_Gate_in_New_Delhi_03-2016_img3.jpg',
           }}
           style={styles.cardImage}
         />
         <View style={styles.cardBody}>
-          <Text style={styles.cardTitle}>Taj Mahal</Text>
-          <Text style={styles.cardLabel}>Agra, Uttar Pradesh</Text>
+          <Text style={styles.cardTitle}>India Gate</Text>
+          <Text style={styles.cardLabel}>New Delhi</Text>
           <Text style={styles.cardDescription}>
-            The Taj Mahal, an ivory-white marble mausoleum on the southern bank
-            of the river Yamuna in Agra, was commissioned in 1632 by Mughal
-            Emperor Shah Jahan in memory of his wife Mumtaz Mahal.
+            The India Gate is a war memorial located in New Delhi, commemorating
+            the soldiers of the British Indian Army who died during World War I.
+            It is a popular tourist attraction and a symbol of national pride.
           </Text>
-          <Text style={styles.cardFooter}>2 hours away</Text>
+          <Text style={styles.cardFooter}>15 mins away</Text>
         </View>
       </View>
     </View>
