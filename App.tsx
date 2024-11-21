@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import FlatCards from './components/FlatCards';
 import ElevatedCards from './components/ElevatedCards';
 import FancyCards from './components/FancyCards';
+import FancyCards2 from './components/FancyCards2';
 
 export default class App extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class App extends Component {
           <FlatCards />
           <ElevatedCards />
           <FancyCards />
+          <FancyCards2 />
         </ScrollView>
       </SafeAreaView>
     );
