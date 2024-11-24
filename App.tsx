@@ -7,6 +7,7 @@ import FancyCards2 from './components/FancyCards2';
 import FancyCards3 from './components/FancyCards3';
 import FancyCards4 from './components/FancyCards4';
 import ActionCard from './components/ActionCard';
+import ContactList from './components/ContactList';
 
 export default class App extends Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends Component {
           <FancyCards3 />
           <FancyCards4 />
           <ActionCard />
+          <ContactList />
         </ScrollView>
       </SafeAreaView>
     );
