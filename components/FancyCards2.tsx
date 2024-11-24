@@ -1,27 +1,25 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-export default function FancyCard() {
+export default function FancyCards2() {
   return (
     <View>
-      <Text align- style={styles.headingText}>
-        Trending places
-      </Text>
       <View style={[styles.card, styles.cardElevated]}>
         <Image
           source={{
-            uri: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQZA8s3i80S9sJnQwPMBucnYOuPjOsPWuuWKP272agfS60vRU_0o1Vzv_6W03OySwua1OyWOjO2wlK9hVL2lzOgQ',
+            uri: 'https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg',
           }}
           style={styles.cardImage}
         />
         <View style={styles.cardBody}>
-          <Text style={styles.cardTitle}>Hawa Mahal</Text>
-          <Text style={styles.cardLabel}>Pink City, jaipur</Text>
+          <Text style={styles.cardTitle}>Taj Mahal</Text>
+          <Text style={styles.cardLabel}>Agra, Uttar Pradesh</Text>
           <Text style={styles.cardDescription}>
-            The Hawa Mahal is a palace in the city of Jaipur, India. Built from
-            red and pink sandstone, it is on the edge of the City Palace.
+            The Taj Mahal, an ivory-white marble mausoleum on the southern bank
+            of the river Yamuna in Agra, was commissioned in 1632 by Mughal
+            Emperor Shah Jahan in memory of his wife Mumtaz Mahal.
           </Text>
-          <Text style={styles.cardFooter}>12 mins away</Text>
+          <Text style={styles.cardFooter}>2 hours away</Text>
         </View>
       </View>
     </View>
@@ -29,13 +27,6 @@ export default function FancyCard() {
 }
 
 const styles = StyleSheet.create({
-  headingText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    paddingHorizontal: 8,
-    marginTop: 8,
-    textAlign: 'center',
-  },
   card: {
     width: 350,
     height: 360,

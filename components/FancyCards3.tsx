@@ -1,27 +1,26 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
-export default function FancyCard() {
+export default function FancyCardsMysorePalace() {
   return (
     <View>
-      <Text align- style={styles.headingText}>
-        Trending places
-      </Text>
       <View style={[styles.card, styles.cardElevated]}>
         <Image
           source={{
-            uri: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQZA8s3i80S9sJnQwPMBucnYOuPjOsPWuuWKP272agfS60vRU_0o1Vzv_6W03OySwua1OyWOjO2wlK9hVL2lzOgQ',
+            uri: 'https://upload.wikimedia.org/wikipedia/commons/4/4f/Mysore_Palace_Night.jpg',
           }}
           style={styles.cardImage}
         />
         <View style={styles.cardBody}>
-          <Text style={styles.cardTitle}>Hawa Mahal</Text>
-          <Text style={styles.cardLabel}>Pink City, jaipur</Text>
+          <Text style={styles.cardTitle}>Mysore Palace</Text>
+          <Text style={styles.cardLabel}>Mysuru, Karnataka</Text>
           <Text style={styles.cardDescription}>
-            The Hawa Mahal is a palace in the city of Jaipur, India. Built from
-            red and pink sandstone, it is on the edge of the City Palace.
+            The Mysore Palace is a historical palace and the royal residence of
+            the Wadiyar dynasty. It is one of the most visited monuments in
+            India, famous for its Indo-Saracenic architecture and vibrant
+            lighting displays.
           </Text>
-          <Text style={styles.cardFooter}>12 mins away</Text>
+          <Text style={styles.cardFooter}>4 hours away</Text>
         </View>
       </View>
     </View>
@@ -29,13 +28,6 @@ export default function FancyCard() {
 }
 
 const styles = StyleSheet.create({
-  headingText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    paddingHorizontal: 8,
-    marginTop: 8,
-    textAlign: 'center',
-  },
   card: {
     width: 350,
     height: 360,
